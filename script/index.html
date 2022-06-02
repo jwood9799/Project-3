@@ -1,25 +1,9 @@
-  <!DOCTYPE html>
+#!/bin/bash
 
-  <html>
+  sudo yum -y update
 
- 
+  sudo yum -y install httpd.x86_64
 
-  <head>
+  systemctl start httpd.service
 
-  <title>Welcome to My Website</title>
-
-  <meta charset="UTF-8">
-
-  </head>
-
-
-  <body>
-
-  <h1>Level Up In Tech</h1>
-
-  <p>Let's go Silver Team!!</p>
-
-  </body>
-
-
-  </html>
+  systemctl enable httpd.service
